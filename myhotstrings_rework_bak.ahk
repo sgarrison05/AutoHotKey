@@ -13,7 +13,7 @@
 	^!e::
 	IfWinNotExist, ahk_class EVERYTHING ahk_exe Everything.exe
 		{
-			Run C:\Users\Shon Garrison\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Utilities\Everything\Search Everything.lnk
+			Run C:\Users\Account_Name\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Utilities\Everything\Search Everything.lnk
 		}
 	IfWinExist, ahk_class EVERYTHING ahk_exe Everything.exe
 		{
@@ -119,7 +119,7 @@
 	^!h::
 	IfWinNotExist, ahk_class ConsoleWindowClass ahk_exe sh.exe
 		{
-			Run C:\Users\Shon Garrison\AppData\Roaming\Microsoft\Windows\Start Menu\Git Bash.lnk
+			Run C:\Users\User_Account\AppData\Roaming\Microsoft\Windows\Start Menu\Git Bash.lnk
 		}	
 	IfWinExist, ahk_class ConsoleWindowClass ahk_exe sh.exe
 		{
