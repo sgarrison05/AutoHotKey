@@ -88,6 +88,17 @@ MyMenu.Show()
 	Run "https://www.google.com/search?q=" . A_Clipboard
 }
 
+; Insert Current Date
+;----------------------------------------
+
+::cdt:: {
+	Send FormatTime(,"MM/dd/yyyy")
+}
+
+::cdl:: {
+	Send FormatTime(, "MMMM dd, yyyy")
+}
+
 ; Personal HotStrings
 ;--------------------------------------------
 
