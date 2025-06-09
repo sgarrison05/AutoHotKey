@@ -1,9 +1,16 @@
 #Requires AutoHotkey v2.0
 #SingleInstance Force
 
+;********************************************************************************
+;  Keyboard Shortcuts Matrix
+;(hash)					#		Windows Logo Key
+;(Exclamation Mark)		!		Alt
+;(caret) 				^		CTRL
+;(Plus)					+		Shift
+;********************************************************************************
+
 ; My Hotkeys
-;--------------------------
-;----------------------------------
+;================================================================================
 
 #m::{
 MyMenu := Menu()
@@ -73,8 +80,7 @@ MyMenu.Show()
 }
 
 ; Google Shortcut Search
-; ---------------------------
-; --------------------------------------
+;--------------------------------------------
 ^!s:: {  ;control + alt + s
 	Clipboard:="" ; Clear the clipboard
 	Send '^c' ; Copy the selected text to the clipboard	
@@ -83,8 +89,7 @@ MyMenu.Show()
 }
 
 ; Personal HotStrings
-;---------------------------
-;----------------------------------
+;--------------------------------------------
 
 ; :*:  ::{Backspace}{NumpadDot}{Space} ; gives a period and a space double tap of space bar
 
