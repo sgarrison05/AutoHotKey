@@ -1,16 +1,8 @@
 #Requires AutoHotkey v2.0
 #SingleInstance Force
 
-;********************************************************************************
-;  Keyboard Shortcuts Matrix
-;(hash)					#		Windows Logo Key
-;(Exclamation Mark)		!		Alt
-;(caret) 				^		CTRL
-;(Plus)					+		Shift
-;********************************************************************************
-
 ; My Hotkeys
-;================================================================================
+;----------------------------------------------------
 
 #m::{
 MyMenu := Menu()
@@ -28,6 +20,7 @@ MyMenu.Add("Git BASH", (*) => Run("C:\Program Files\Git\git-bash.exe"))
 MyMenu.Add("Meld", (*) => Run("C:\Program Files\Meld\Meld.exe"))
 MyMenu.Add("Comptime Calculator", (*) => Run("C:\Users\JuvProb1\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Utilities\Comptime Calculator.appref-ms"))
 MyMenu.Add("Child Age Calculator", (*) => Run("C:\Users\JuvProb1\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Utilities\Child Age Calculator.appref-ms"))
+MyMenu.Add("Training Funds Tracker", (*) => Run("C:\Users\JuvProb1\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Utilities\Training Funds Tracker.appref-ms"))
 MyMenu.Show()
 }
 
@@ -68,6 +61,9 @@ MyMenu.Show()
 ^!d:: { ;control + alt + d
 	Run "C:\Windows\System32\cmd.exe", "D:\Dev", "runas"
 }
+
+; Websites
+;--------------------------------------------------
 			
 ; Loads Google Calendar
 ^!l:: {  ;control + alt + l
@@ -75,12 +71,13 @@ MyMenu.Show()
 }
 
 ; Loads JCMS
-^!j:: {  ;control + alt + l
+^!j:: {  ;control + alt + j
 	Run "https://jcms.tjjd.texas.gov"
 }
 
 ; Google Shortcut Search
-;--------------------------------------------
+; --------------------------------------------------
+
 ^!s:: {  ;control + alt + s
 	Clipboard:="" ; Clear the clipboard
 	Send '^c' ; Copy the selected text to the clipboard	
@@ -117,7 +114,7 @@ MyMenu.Show()
 ::]-50::--------------------------------------------------
 
 ; Personal HotStrings
-;--------------------------------------------
+;---------------------------
 
 ; :*:  ::{Backspace}{NumpadDot}{Space} ; gives a period and a space double tap of space bar
 
@@ -131,7 +128,3 @@ MyMenu.Show()
 ::hphn::(409) 233-9293
 
 ^+x::ExitApp
-
-
-
-
